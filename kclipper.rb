@@ -5,23 +5,23 @@
 class Kclipper < Formula
   desc "Kclipper Command Line Interface"
   homepage "https://github.com/MacroPower/kclipper"
-  version "0.14.3"
+  version "0.14.4"
   license "Apache License"
 
-  depends_on "kcl-lsp"
+  depends_on "macropower/tap/kcl-lsp"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/MacroPower/kclipper/releases/download/v0.14.3/kclipper_Darwin_x86_64", using: CurlDownloadStrategy
-      sha256 "eeaa5b72b5414cea092677d174f307ebe8a7b37bb32d9fe01590bcfa31146ae5"
+      url "https://github.com/MacroPower/kclipper/releases/download/v0.14.4/kclipper_Darwin_x86_64.tar.gz", using: CurlDownloadStrategy
+      sha256 "2f1b2fe741b7b9e12321c7f34b75da6e2633a76477d35778181f0840fe3ca7d6"
 
       def install
         bin.install "kcl"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/MacroPower/kclipper/releases/download/v0.14.3/kclipper_Darwin_arm64", using: CurlDownloadStrategy
-      sha256 "81914da220b0ee82d9b61516fafcf1377edc986c161e4cd8de03c59e803882d9"
+      url "https://github.com/MacroPower/kclipper/releases/download/v0.14.4/kclipper_Darwin_arm64.tar.gz", using: CurlDownloadStrategy
+      sha256 "46e61ab1b302c168442da0820f9c95d699c4daa5bfeba420dc28fd0c4e29c261"
 
       def install
         bin.install "kcl"
@@ -31,15 +31,15 @@ class Kclipper < Formula
 
   on_linux do
     if Hardware::CPU.intel? and Hardware::CPU.is_64_bit?
-      url "https://github.com/MacroPower/kclipper/releases/download/v0.14.3/kclipper_Linux_x86_64", using: CurlDownloadStrategy
-      sha256 "3c963c04ebd2ecc10a382f9c8f77230ddb3c1b54fd58c1e09eee33a1f3680332"
+      url "https://github.com/MacroPower/kclipper/releases/download/v0.14.4/kclipper_Linux_x86_64.tar.gz", using: CurlDownloadStrategy
+      sha256 "b163ec21c69b8532dc83fd341fe5e38d62148a493f03a079601994fdd37e97d5"
       def install
         bin.install "kcl"
       end
     end
     if Hardware::CPU.arm? and Hardware::CPU.is_64_bit?
-      url "https://github.com/MacroPower/kclipper/releases/download/v0.14.3/kclipper_Linux_arm64", using: CurlDownloadStrategy
-      sha256 "9683a118dc0671b64afe5e6cfb8fa61e45b52fbad51b62a377ea668367f5836c"
+      url "https://github.com/MacroPower/kclipper/releases/download/v0.14.4/kclipper_Linux_arm64.tar.gz", using: CurlDownloadStrategy
+      sha256 "7db37a067c30cdc280757499b67b593c10e53be01944a0226240cb7a7eab16f9"
       def install
         bin.install "kcl"
       end
