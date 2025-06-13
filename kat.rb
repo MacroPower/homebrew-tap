@@ -5,21 +5,21 @@
 class Kat < Formula
   desc "cat for Kubernetes manifests"
   homepage "https://github.com/MacroPower/kat/"
-  version "0.7.3"
+  version "0.8.0"
   license "Apache License"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/MacroPower/kat/releases/download/v0.7.3/kat_Darwin_x86_64.tar.gz", using: CurlDownloadStrategy
-      sha256 "fc39f83742c71e8723324b26b7da0529e4cfac2c1c80e36f6cf26f0971858169"
+      url "https://github.com/MacroPower/kat/releases/download/v0.8.0/kat_Darwin_x86_64.tar.gz", using: CurlDownloadStrategy
+      sha256 "bf7edcc95411cafc7021e54f844ee81609a8b8f5ad4e8ef74d812baadb0a1eff"
 
       def install
         bin.install "kat"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/MacroPower/kat/releases/download/v0.7.3/kat_Darwin_arm64.tar.gz", using: CurlDownloadStrategy
-      sha256 "a23d83b0384e547440ade8e709494f5795efd3a87c5208bf5a1af80160456178"
+      url "https://github.com/MacroPower/kat/releases/download/v0.8.0/kat_Darwin_arm64.tar.gz", using: CurlDownloadStrategy
+      sha256 "cf3fd340e8d0e2de1f4d38bc0a72b81b34eb3d458b7e4e79a2ef657ea625a969"
 
       def install
         bin.install "kat"
@@ -29,15 +29,15 @@ class Kat < Formula
 
   on_linux do
     if Hardware::CPU.intel? and Hardware::CPU.is_64_bit?
-      url "https://github.com/MacroPower/kat/releases/download/v0.7.3/kat_Linux_x86_64.tar.gz", using: CurlDownloadStrategy
-      sha256 "23861e69932536a2a99eff76db0a66c34f1f2ac2be090c4992454ad3e02f2752"
+      url "https://github.com/MacroPower/kat/releases/download/v0.8.0/kat_Linux_x86_64.tar.gz", using: CurlDownloadStrategy
+      sha256 "de16475d53af74e6c34198072de89757baf122bdfd436050e36f452b91c7fb8b"
       def install
         bin.install "kat"
       end
     end
     if Hardware::CPU.arm? and Hardware::CPU.is_64_bit?
-      url "https://github.com/MacroPower/kat/releases/download/v0.7.3/kat_Linux_arm64.tar.gz", using: CurlDownloadStrategy
-      sha256 "4884baed53ca66a9e075a4657d304860c3089be02c18bb7d7749a14af11b48cb"
+      url "https://github.com/MacroPower/kat/releases/download/v0.8.0/kat_Linux_arm64.tar.gz", using: CurlDownloadStrategy
+      sha256 "9ddd79d6f0964cb4467df9f0e0c7db3984e935f0de73baeb0e4bcf7447c3e53d"
       def install
         bin.install "kat"
       end
