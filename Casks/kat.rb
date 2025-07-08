@@ -2,7 +2,7 @@
 cask "kat" do
   desc "TUI for rendering, validating, and displaying local Kubernetes manifests"
   homepage "https://github.com/MacroPower/kat/"
-  version "0.15.1"
+  version "0.16.0"
 
   livecheck do
     skip "Auto-generated on release."
@@ -12,23 +12,23 @@ cask "kat" do
 
   on_macos do
     on_intel do
-      url "https://github.com/MacroPower/kat/releases/download/v0.15.1/kat_Darwin_x86_64.tar.gz"
-      sha256 "cdf7ea435b6fe857187f99aee5df90a9f8f31dca4e59d5fc2157177e69858930"
+      url "https://github.com/MacroPower/kat/releases/download/v0.16.0/kat_Darwin_x86_64.tar.gz"
+      sha256 "5556cd74799db67fa8bc3bac0c58fba3a389bd90bd26b986b2d21bc91138d73b"
     end
     on_arm do
-      url "https://github.com/MacroPower/kat/releases/download/v0.15.1/kat_Darwin_arm64.tar.gz"
-      sha256 "004ca0cc8bd1fa4e5a3d9f1c1a58269eb121b75fbec6b5d4ef14ed3a842d3966"
+      url "https://github.com/MacroPower/kat/releases/download/v0.16.0/kat_Darwin_arm64.tar.gz"
+      sha256 "3be7903bb8b595df3cfe9c8f06307aeda0d816980d37c280c76a45f6e2035c72"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/MacroPower/kat/releases/download/v0.15.1/kat_Linux_x86_64.tar.gz"
-      sha256 "0fe850541a8f6d0827062e80c3ff41c11ca835bc7bcd2a9db2101d01e63c42fe"
+      url "https://github.com/MacroPower/kat/releases/download/v0.16.0/kat_Linux_x86_64.tar.gz"
+      sha256 "e370f4cf97f49e887fa52fb472f07b164133807d9c0c47e05d15d52397968ddf"
     end
     on_arm do
-      url "https://github.com/MacroPower/kat/releases/download/v0.15.1/kat_Linux_arm64.tar.gz"
-      sha256 "3b97649373cc78994e0aaebfa0b2412a140eb0c767721d42f19deaa359bafded"
+      url "https://github.com/MacroPower/kat/releases/download/v0.16.0/kat_Linux_arm64.tar.gz"
+      sha256 "3067ae54db003365a1ce1307b0446fd041f2e73fdb2d7cea8ce7f7390ddfbea4"
     end
   end
 
