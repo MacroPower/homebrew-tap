@@ -2,36 +2,33 @@
 cask "kclipper" do
   desc "Kclipper Command Line Interface"
   homepage "https://github.com/macropower/kclipper"
-  version "0.15.1"
+  version "0.16.0"
 
   livecheck do
     skip "Auto-generated on release."
   end
 
   binary "kclipper"
-  depends_on cask: [
-      "macropower/tap/kcl-lsp",
-    ]
 
   on_macos do
     on_intel do
-      url "https://github.com/macropower/kclipper/releases/download/v0.15.1/kclipper_Darwin_x86_64.tar.gz"
-      sha256 "d55f1b189ef393c776a1f9f130ef0b2bc03ef411dd9a720d67b5738f52ee5d45"
+      url "https://github.com/macropower/kclipper/releases/download/v0.16.0/kclipper_Darwin_x86_64.tar.gz"
+      sha256 "2e27af2070cb5d23ced659bc2c414c2e1a2b441148acdda46be51aed61b91deb"
     end
     on_arm do
-      url "https://github.com/macropower/kclipper/releases/download/v0.15.1/kclipper_Darwin_arm64.tar.gz"
-      sha256 "3db5de8bb5f7287f20c25fb9fee17123a1a7afb05590ceb721e0ad62f12ba81c"
+      url "https://github.com/macropower/kclipper/releases/download/v0.16.0/kclipper_Darwin_arm64.tar.gz"
+      sha256 "c73bea1ee579a132a2fb82813a65c5ea60fd1e480f35786fb6a103c491f21675"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/macropower/kclipper/releases/download/v0.15.1/kclipper_Linux_x86_64.tar.gz"
-      sha256 "a2af1c1f5526a938be3b4959f915f0dbff6501712f56f96e575d90f1833e1fa6"
+      url "https://github.com/macropower/kclipper/releases/download/v0.16.0/kclipper_Linux_x86_64.tar.gz"
+      sha256 "8f500dedc226841eba8e8289bc2606efd02051cd018a0d53a49313cba5406800"
     end
     on_arm do
-      url "https://github.com/macropower/kclipper/releases/download/v0.15.1/kclipper_Linux_arm64.tar.gz"
-      sha256 "c5b59fb8304e888213feb91e5cdbbea94cfd4448346de2a950c3fea10f9504e5"
+      url "https://github.com/macropower/kclipper/releases/download/v0.16.0/kclipper_Linux_arm64.tar.gz"
+      sha256 "476e3f43616a57ad79dcce4d5d50d6653ce0016f9ab0bac861724a372219edf3"
     end
   end
 
