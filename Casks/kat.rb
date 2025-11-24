@@ -18,22 +18,22 @@ cask "kat" do
   on_macos do
     on_intel do
       url "https://github.com/MacroPower/kat/releases/download/v#{version}/kat_Darwin_x86_64.tar.gz"
-      sha256 "d0d74bc6200ab3455fe1ffaf2ef9c8174fadab8afcf53b83916293f40628b4b2"
+      sha256 "c8b9e3c9ed59aad99781f89bbfbd5651289c0639f34d68d5dce222ca73b06caf"
     end
     on_arm do
       url "https://github.com/MacroPower/kat/releases/download/v#{version}/kat_Darwin_arm64.tar.gz"
-      sha256 "4c573e1ec6b185bf24e5fbeb0fbf6b02f6b12cc3a60e5846b49eb790092678b4"
+      sha256 "42c51c10cacaca0cbbb99bcbb3e738aee5e21f2a55c1bf054de88f48b58b20fd"
     end
   end
 
   on_linux do
     on_intel do
       url "https://github.com/MacroPower/kat/releases/download/v#{version}/kat_Linux_x86_64.tar.gz"
-      sha256 "96f677b5f87be0b6ddd1266f995ba57c1a1ba342d5b568c5ccb3a38501335355"
+      sha256 "4c0f4f9eadec4f8d9c4d66df61beb7178962db6b1573e60f0c8a663afb87eb08"
     end
     on_arm do
       url "https://github.com/MacroPower/kat/releases/download/v#{version}/kat_Linux_arm64.tar.gz"
-      sha256 "7b872f6fa20d52c677f1bbde1dd000f246fd47b6838d1f39b35e64a5ee70ad79"
+      sha256 "587e3305d2ca0fa9ea0e949b7895b29b628e3ffe8c4c484051c9244ff003f989"
     end
   end
 
