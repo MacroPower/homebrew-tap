@@ -4,22 +4,22 @@ cask "hcp_archiver" do
 
   on_macos do
     on_intel do
-      sha256 "0526cf3c6bda1f897e7b79fd1cccd15f909e912bb8981d0def87f8de4d3f7e18"
+      sha256 "31a7cf080738090e1b9e07844611689a338e375bf7ed23ee0754274bc8cc37ed"
       url "https://github.com/MacroPower/hcp_archiver/releases/download/v#{version}/hcp_archiver_Darwin_x86_64.tar.gz"
     end
     on_arm do
-      sha256 "33153c5d8a16be39545d551205d6cfe0dbb6d7e9af9fb32a36f52b0aadd7c133"
+      sha256 "7c5f4eefeb9013205d1a2ff45955deda20342b923e7ca21c5a6de8e9bb8b34f6"
       url "https://github.com/MacroPower/hcp_archiver/releases/download/v#{version}/hcp_archiver_Darwin_arm64.tar.gz"
     end
   end
 
   on_linux do
     on_intel do
-      sha256 "8380b7c275fb08c031b158f2bcab66dcab4aa828c982220ede979eee62b19cf2"
+      sha256 "931a66d12ce22b0301efffdd12995fc1485b9d24a4ec18ae652e9039977a0755"
       url "https://github.com/MacroPower/hcp_archiver/releases/download/v#{version}/hcp_archiver_Linux_x86_64.tar.gz"
     end
     on_arm do
-      sha256 "44bdabc8d0265b6ebbfef1c64a6d557cfe97d18afe6ca1b8cbbc6a669b7ff619"
+      sha256 "1d4793dd808eae1995f8834672b2bb746ce21120f9776882de3fc8f14099d8b2"
       url "https://github.com/MacroPower/hcp_archiver/releases/download/v#{version}/hcp_archiver_Linux_arm64.tar.gz"
     end
   end
